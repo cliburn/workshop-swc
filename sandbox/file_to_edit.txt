@@ -1,7 +1,7 @@
 This is a file for you to edit!
 
-My favorite color is: purple
+My favorite color is:
 
-For lunch I ate: soup
+For lunch I ate:
 
-My favorite git command is: git diff
+My favorite git command is:
