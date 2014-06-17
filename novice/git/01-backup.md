@@ -45,7 +45,9 @@ $ git config --global core.editor "nano"
 
 (Please use your own name and email address instead of Dracula's,
 and please make sure you choose an editor that's actually on your system,
-such as `notepad` on Windows.)
+such as `notepad` on Windows. 
+
+<!--Here are tips for using TextWrangler and Notepad++ [TextWrangler](../../gloss.html#repository))-->
 
 Git commands are written `git verb`,
 where `verb` is what we actually want it to do.
@@ -640,7 +642,8 @@ and "unique" really does mean unique:
 every change to any set of files on any machine
 has a unique 40-character identifier.
 Our first commit was given the ID
-f22b25e3233b4645dabd0d81e651fe074bd8e73b,
+f22b25e3233b4645dabd0d81e651fe074bd8e73b
+(in this example, since the ID is unique to a specific commit on a specific computer, so the ID for your first commit will be different),
 so let's try this:
 
 <div class="in" markdown="1">
