@@ -334,6 +334,10 @@ or find a way to divide the work up differently.
 
 <div class="keypoints" markdown="1">
 
+<!-- ***NOTE: It is always a good idea to pull before starting work.  It minimizes conflicts! -->
+
+<!-- ***NOTE: Minimizing conflicts is another reason to divide projects into multiple files-->
+
 #### Key Points
 *   Conflicts occur when two or more people change the same file(s) at the same time.
 *   The version control system does not allow people to blindly overwrite each other's changes.

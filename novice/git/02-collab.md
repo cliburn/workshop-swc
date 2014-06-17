@@ -272,6 +272,10 @@ to share work between different people and machines.
 
 <div class="keypoints" markdown="1">
 
+<!-- ***NOTE: Why Github? Why distributed version control? -->
+
+<!-- ***NOTE: Demo SourceTree, Github app?-->
+
 #### Key Points
 *   A local Git repository can be connected to one or more remote repositories.
 *   Use the HTTPS protocol to connect to remote repositories until you have learned how to set up SSH.

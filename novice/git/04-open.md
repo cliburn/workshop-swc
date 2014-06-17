@@ -20,6 +20,8 @@ The opposite of "open" is "broken".
 &mdash; John Wilbanks
 </blockquote>
 
+<!-- ***NOTE: Mention educational accounts for GitHub and Bitbucket-->
+
 Free sharing of information might be the ideal in science,
 but the reality is often more complicated.
 Normal practice today looks something like this:

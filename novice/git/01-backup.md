@@ -129,6 +129,8 @@ nothing to commit (create/copy files and use "git add" to track)
 ~~~
 </div>
 
+<!-- ***NOTE: Pay attention to "git status" messages, they are helpful -->
+
 #### Tracking Changes to Files
 
 Let's create a file called `mars.txt` that contains some notes
@@ -308,6 +310,9 @@ and the log message Git was given when the revision was created.
 > so that our filesystem doesn't become cluttered
 > (and so that we can't accidentally edit or delete an old version).
 
+<!-- ***NOTE:  let the computer do, what the computer does best (ls .git)-->
+
+
 #### Changing a File
 
 Now suppose Dracula adds more information to the file.
@@ -391,6 +396,12 @@ If we can break it down into pieces:
     In particular,
     the `+` markers in the first column show where we are adding lines.
 
+> #### Visual diff
+> git difftool will run git using a visual diff program, if you have one installed.
+
+<!-- ***NOTE: demo ediff-revision -->
+
+
 Let's commit our change:
 
 <div class="in" markdown="1">
@@ -446,6 +457,10 @@ the current [change set](../../gloss.html#change-set)
 but not yet committed.
 `git add` puts things in this area,
 and `git commit` then copies them to long-term storage (as a commit):
+
+<!-- ***NOTE: Why "git add", then "git commit"? -->
+
+<!-- ***NOTE: Because git allows you to stage some of your changed files, it is convenient to divide projects into multiple files, instead of one big file. -->
 
 <img src="img/git-staging-area.svg" alt="The Git Staging Area" />
 
@@ -852,6 +867,8 @@ and everything in the `results` directory.
 (If any of these files were already being tracked,
 Git would continue to track them.)
 
+<!-- ***NOTE:  What should you include in a repo (and what should you exclude) -->
+
 Once we have created this file,
 the output of `git status` is much cleaner:
 
@@ -932,6 +949,8 @@ nothing to commit, working directory clean
 ~~~
 </div>
 
+<!-- ***NOTE: Discuss how git handles non-text files (e.g. Word Docs) -->
+
 <div class="keypoints" markdown="1">
 
 #### Key Points
@@ -960,7 +979,9 @@ nothing to commit, working directory clean
     then modify one line and add a fourth and display the differences
     between its updated state and its original state.
 
-2.  The following sequence of commands creates one Git repository inside another:
+2. How do Git handle non-text files (e.g. Word documents, PDFs, etc)?  Use ~git log~ to find the last commit where "cheatsheets/git_cheatsheet.pdf" was changed, then use ~git diff~ to compare that version to the one in your working directory.
+
+3.  The following sequence of commands creates one Git repository inside another:
 
     <div class="in" markdown="1">
     ~~~
