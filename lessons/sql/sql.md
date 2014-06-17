@@ -9,8 +9,7 @@ Setup
 1. Install Firefox
 2. Install the SQLite Manager add on **Tools -> Add-ons -> Search -> SQLite
 Manager -> Install -> Restart**
-3. Download the [Portal Database](https://github.com/ethanwhite/swc-bootcamps/raw/master/SQL/portal_mammals.sqlite)
-4. Open SQLite Manage **Firefox Button -> Web Developer -> SQLite Manager**
+3. Open SQLite Manage **Firefox Button -> Web Developer -> SQLite Manager**
 
 
 Relational databases
@@ -185,8 +184,6 @@ the year 2000 on.  This time, let’s use IN as one way to make the query easier
 to understand.  It is equivalent to saying ``WHERE (species = "DM") OR (species
 = "DO") OR (species = "DS")``, but reads more neatly:
 
-    SELECT * FROM surveys WHERE (year >= 2000) AND (species IN ("DM", "DO", "DS"));
-
     SELECT *
     FROM surveys
     WHERE (year >= 2000) AND (species IN ("DM", "DO", "DS"));
@@ -230,7 +227,7 @@ Another note for ordering. We don’t actually have to display a column to sort 
 it.  For example, let’s say we want to order by the species ID, but we only want
 to see genus and species.
 
-    SELECT genus, species FROM species ORDER BY taxon ASC;
+    SELECT genus, species FROM species ORDER BY taxa ASC;
 
 We can do this because sorting occurs earlier in the computational pipeline than
 field selection.
